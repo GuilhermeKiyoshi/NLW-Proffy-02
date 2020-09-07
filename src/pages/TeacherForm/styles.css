@@ -135,7 +135,7 @@
         max-width: 100vw;
     }
     
-    #page-teacher-form ,.page-header .header-content {
+    #page-teacher-form .page-header .header-content {
         margin-bottom: 0;
     }
 
@@ -167,5 +167,6 @@
 
     #page-teacher-form main footer button {
         width: 20rem;
+        margin-top: 0;
     }
 }
