@@ -58,4 +58,5 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
         </article>
     );
 }
+
 export default TeacherItem;

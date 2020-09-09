@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
 import warningIcon from '../../assets/images/icons/warning.svg';
-//import Textarea from '../../components/Textarea';
+import Textarea from '../../components/Textarea';
 import Select from '../../components/Select';
 
 import api from '../../services/api';
@@ -59,7 +59,6 @@ function TeacherForm() {
         }).catch(() => {
             alert('Erro no cadastro!');
         })
-
     }
 
     return (
@@ -92,7 +91,7 @@ function TeacherForm() {
                             onChange={(e) => { setWhatsapp(e.target.value) }}    
                         />
                         
-                        <Input name="bio" 
+                        <Textarea name="bio" 
                             label="Bio"
                             value={bio}
                             onChange={(e) => { setBio(e.target.value) }}    
